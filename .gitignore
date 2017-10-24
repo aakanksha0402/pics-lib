@@ -53,3 +53,6 @@ Gemfile.lock
 database.yml
 schema.rb
 .DS_Store
+db/development.sqlite3
+db/test.sqlite3
+log/development.log
