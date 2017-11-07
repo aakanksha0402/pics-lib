@@ -9,6 +9,21 @@
   </head>
 
   <body>
+    <!-- Top Background Image Wrapper -->
+    <div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');">
+      <div class="wrapper row1">
+        <%= render "layouts/header" %>
+      </div>
+      <div id="pageintro" class="hoc clear">
+        <article class="introtxt">
+          <h2 class="heading">Suscipit ex aliquam</h2>
+          <p>Erat volutpat vivamus et velit at risus.</p>
+          <footer><a class="btn inverse" href="#">Laoreet pretium</a></footer>
+        </article>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!-- End Top Background Image Wrapper -->
     <%= yield %>
   </body>
 </html>
