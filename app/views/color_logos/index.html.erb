@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Color Logos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Name</th>
+      <th>Font set</th>
+      <th>Theme</th>
+      <th>Primary color</th>
+      <th>Seconday color</th>
+      <th>Default</th>
+      <th>False}</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @color_logos.each do |color_logo| %>
+      <tr>
+        <td><%= color_logo.user %></td>
+        <td><%= color_logo.name %></td>
+        <td><%= color_logo.font_set %></td>
+        <td><%= color_logo.theme %></td>
+        <td><%= color_logo.primary_color %></td>
+        <td><%= color_logo.seconday_color %></td>
+        <td><%= color_logo.default %></td>
+        <td><%= color_logo.false} %></td>
+        <td><%= link_to 'Show', color_logo %></td>
+        <td><%= link_to 'Edit', edit_color_logo_path(color_logo) %></td>
+        <td><%= link_to 'Destroy', color_logo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Color Logo', new_color_logo_path %>
